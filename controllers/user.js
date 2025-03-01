@@ -2,6 +2,7 @@ import User from '../models/user.js'
 import { StatusCodes } from 'http-status-codes'
 import jwt from 'jsonwebtoken'
 
+// 註冊-----------------------------------------------------------------
 export const create = async (req, res) => {
   try {
     const result = await User.create(req.body)
@@ -34,6 +35,7 @@ export const create = async (req, res) => {
   }
 }
 
+// 登入-----------------------------------------------------------------
 export const login = async (req, res) => {
   try {
     // jwt.sign(保存資料, SECRET, 設定)
