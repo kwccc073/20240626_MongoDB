@@ -3,7 +3,7 @@ import express from 'express'
 import mongoose from 'mongoose'
 import { StatusCodes } from 'http-status-codes'
 import routeUser from './routes/user.js'
-import './passport/passport.js'
+import './passport/passport.js' // 註冊驗證方式
 
 const app = express()
 
